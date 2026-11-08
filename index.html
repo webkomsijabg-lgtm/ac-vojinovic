@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="sr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Auto centar Vojinović | Auto servis na Gornjem Voždovcu</title>
+<meta name="description" content="Auto centar Vojinović, Milke Grgurov 9, Gornji Voždovac. Servis i priprema auta za put.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800&family=Figtree:wght@400;500;600;700&family=Gochi+Hand&display=swap" rel="stylesheet">
+<style>
+:root{--forest:#26402f;--forest2:#33573f;--moss:#7f9a5a;--cream:#f5f1e6;--khaki:#e8e1cc;--rust:#c2582b;--ink:#1f2620;--mut:#616a5f;--line:#d6cfb8}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Figtree,system-ui,sans-serif;background:var(--cream);color:var(--ink);line-height:1.6;font-size:16.5px}
+img{display:block;max-width:100%}
+a{color:inherit}
+h1,h2,h3{font-family:Fraunces,Georgia,serif;font-weight:800;line-height:1.02;color:var(--forest);letter-spacing:-.01em}
+h2{font-size:clamp(34px,4.6vw,58px);margin-bottom:14px}
+h3{font-size:23px;font-weight:600}
+.gh{font-family:"Gochi Hand",cursive;font-size:26px;color:var(--rust);line-height:1.1}
+.wrap{max-width:1160px;margin:0 auto;padding:0 20px}
+.kick{font-size:12px;letter-spacing:.2em;text-transform:uppercase;font-weight:700;color:var(--rust);margin-bottom:12px}
+.lead{color:var(--mut);font-size:18px;max-width:620px}
+section{padding:90px 0}
+.topo{background-color:var(--cream);background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' fill='none' stroke='%23d9d1b6' stroke-width='1.2'%3E%3Cpath d='M-20 60 C 60 20 120 100 200 60 S 320 40 340 80'/%3E%3Cpath d='M-20 110 C 70 70 130 150 210 110 S 320 90 340 130'/%3E%3Cpath d='M-20 160 C 80 120 140 200 220 160 S 320 140 340 180'/%3E%3Cpath d='M-20 210 C 90 170 150 250 230 210 S 320 190 340 230'/%3E%3Cpath d='M-20 260 C 100 220 160 300 240 260 S 320 240 340 280'/%3E%3C/svg%3E")}
+.btn{display:inline-block;background:var(--rust);color:#fff;text-decoration:none;font-weight:700;padding:15px 24px;border-radius:40px}
+.btn-o{display:inline-block;border:2px solid var(--forest);color:var(--forest);text-decoration:none;font-weight:700;padding:13px 22px;border-radius:40px}
+.demo{background:var(--ink);color:#e6e2d4;font-size:13px;text-align:center;padding:9px 16px}
+.hdr{position:sticky;top:0;z-index:50;background:rgba(245,241,230,.95);backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
+.hdr .wrap{display:flex;justify-content:space-between;align-items:center;height:70px;gap:16px}
+.logo{font-family:Fraunces;font-weight:800;font-size:24px;text-decoration:none;color:var(--forest);white-space:nowrap}
+.logo span{color:var(--rust)}
+.hdr nav{display:flex;gap:22px}
+.hdr nav a{text-decoration:none;font-size:15px;color:var(--mut);font-weight:500}
+.hdr nav a:hover{color:var(--forest)}
+.right{display:flex;gap:10px;align-items:center}
+.tel{background:var(--forest);color:#fff;text-decoration:none;font-weight:600;padding:9px 16px;border-radius:40px;font-size:15px;white-space:nowrap}
+.burger{display:none;width:46px;height:46px;border:1.5px solid var(--line);border-radius:50%;background:#fff;cursor:pointer;flex-direction:column;justify-content:center;align-items:center;gap:5px}
+.burger i{display:block;width:18px;height:2px;background:var(--forest);transition:.25s}
+.hdr.open .burger i:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.hdr.open .burger i:nth-child(2){opacity:0}
+.hdr.open .burger i:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+.hero .wrap{display:grid;grid-template-columns:1.1fr 1fr;gap:44px;align-items:center;padding-top:50px;padding-bottom:80px}
+.hero h1{font-size:clamp(44px,6.4vw,86px)}
+.hero h1 em{font-style:italic;color:var(--rust);font-weight:600}
+.hero p{color:var(--mut);font-size:18px;margin:20px 0 28px;max-width:480px}
+.acts{display:flex;gap:12px;flex-wrap:wrap}
+.hero .ph{position:relative}
+.hero .ph img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:28px 140px 28px 28px}
+.hero .sign{position:absolute;left:-30px;bottom:50px;background:#2f6b45;color:#fff;border-radius:8px;padding:12px 18px;border:3px solid #fff;box-shadow:0 14px 26px -14px rgba(0,0,0,.5);font-weight:700;line-height:1.2}
+.hero .sign small{display:block;font-weight:500;font-size:13px;opacity:.85}
+/* trip planner */
+.plan{background:var(--forest);color:#e1e8dc}
+.plan h2{color:#fff}.plan .lead{color:#b9c8b4}.plan .kick{color:#f0b38f}
+.pgrid{display:grid;grid-template-columns:1fr 1.15fr;gap:40px;margin-top:36px;align-items:start}
+.dest{display:grid;gap:10px}
+.dest button{display:flex;justify-content:space-between;align-items:center;background:rgba(255,255,255,.06);border:1.5px solid rgba(255,255,255,.18);border-radius:16px;padding:16px 20px;font:600 16px Figtree;color:#fff;cursor:pointer;text-align:left}
+.dest button span{font-weight:400;color:#b9c8b4;font-size:14px}
+.dest button.on{background:#fff;color:var(--forest);border-color:#fff}
+.dest button.on span{color:var(--mut)}
+.seas{display:flex;gap:8px;margin-top:16px}
+.seas button{flex:1;border:1.5px solid rgba(255,255,255,.25);background:transparent;color:#fff;border-radius:999px;padding:10px;font:600 14px Figtree;cursor:pointer}
+.seas button.on{background:var(--rust);border-color:var(--rust)}
+.list{background:var(--cream);color:var(--ink);border-radius:24px;padding:30px;position:sticky;top:96px}
+.list h3{font-size:28px}
+.list ul{margin-top:14px}
+.list li{list-style:none;padding:11px 0 11px 34px;border-bottom:1px dashed var(--line);position:relative;cursor:pointer}
+.list li:before{content:"";position:absolute;left:0;top:13px;width:20px;height:20px;border:2px solid var(--forest);border-radius:6px}
+.list li.ok:before{background:var(--moss);border-color:var(--moss)}
+.list li.ok{color:var(--mut);text-decoration:line-through}
+.list li small{display:block;color:var(--mut);font-size:13.5px;text-decoration:none}
+.list .cnt{margin-top:14px}
+/* services */
+.svc{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:40px}
+.s{background:#fff;border-radius:22px;border:1px solid var(--line);overflow:hidden}
+.s img{width:100%;height:190px;object-fit:cover}
+.s div{padding:22px}
+.s p{color:var(--mut);font-size:15px;margin-top:6px}
+.s:nth-child(2){transform:translateY(24px)}
+/* road signs tips */
+.tips{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:40px}
+.tip{background:var(--khaki);border-radius:20px;padding:24px;position:relative}
+.tip .sg{width:52px;height:52px;margin-bottom:14px}
+.tip p{color:var(--mut);font-size:15px;margin-top:6px}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:40px;position:relative}
+.steps:before{content:"";position:absolute;top:24px;left:4%;right:4%;border-top:3px dashed var(--moss)}
+.st{position:relative;text-align:center;padding:0 10px}
+.st .n{width:50px;height:50px;border-radius:50%;background:var(--forest);color:#fff;display:grid;place-items:center;font-family:Fraunces;font-size:22px;margin:0 auto 14px;position:relative}
+.st p{color:var(--mut);font-size:15px;margin-top:6px}
+.note{font-size:14px;color:var(--mut);font-style:italic;margin-top:12px}
+.slot{border:2px dashed #bdb595;border-radius:22px;padding:34px;text-align:center;color:var(--mut);margin-top:40px;background:#fff}
+.fg{display:grid;grid-template-columns:1fr 1.5fr;gap:56px}
+details{border-bottom:1px solid var(--line);padding:18px 0}
+summary{cursor:pointer;font-weight:700;font-size:17px;list-style:none;display:flex;justify-content:space-between;gap:14px}
+summary:after{content:"+";color:var(--rust);font-size:24px;line-height:1}
+details[open] summary:after{content:"–"}
+details p{color:var(--mut);margin-top:8px;font-size:15.5px}
+.visit .wrap{display:grid;grid-template-columns:1fr 1.2fr;gap:46px}
+.hrs{background:#fff;border:1px solid var(--line);border-radius:22px;padding:20px 24px;margin-top:20px}
+.hrs div{display:flex;justify-content:space-between;gap:16px;padding:10px 0;border-bottom:1px solid var(--line)}
+.hrs div:last-child{border:0}
+.map{border-radius:26px;overflow:hidden;min-height:460px;border:6px solid #fff;box-shadow:0 24px 40px -30px rgba(38,64,47,.6)}
+.map iframe{width:100%;height:100%;min-height:448px;border:0;filter:saturate(.8)}
+footer{background:var(--forest);color:#b9c8b4;padding:50px 0 26px;font-size:14.5px}
+.fgrid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:36px}
+footer h4{color:#fff;font-family:Fraunces;font-size:20px;margin-bottom:10px}
+footer ul{list-style:none}footer li{margin:5px 0}footer a{text-decoration:none}
+.copy{border-top:1px solid rgba(255,255,255,.12);margin-top:34px;padding-top:18px;font-size:12px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+.callbar{display:none}
+@media(max-width:980px){
+ .burger{display:flex}
+ .hdr nav{display:none;position:absolute;top:70px;left:0;right:0;flex-direction:column;gap:0;background:var(--cream);border-bottom:1px solid var(--line);padding:6px 20px 16px;box-shadow:0 20px 30px -20px rgba(38,64,47,.3)}
+ .hdr.open nav{display:flex}
+ .hdr nav a{padding:14px 0;border-bottom:1px solid var(--line);font-size:17px;color:var(--ink)}
+ .hdr nav a:last-child{border:0}
+ .hero .wrap,.pgrid,.fg,.visit .wrap{grid-template-columns:1fr;gap:34px}
+ .hero .sign{left:12px}
+ .list{position:static}
+ .svc{grid-template-columns:1fr}.s:nth-child(2){transform:none}
+ .tips{grid-template-columns:1fr 1fr}
+ .steps{grid-template-columns:1fr 1fr;gap:30px}.steps:before{display:none}
+ section{padding:64px 0}
+}
+@media(max-width:600px){
+ .tel{display:none}
+ .tips,.steps{grid-template-columns:1fr}
+ .fgrid{grid-template-columns:1fr}
+ .callbar{display:block;position:fixed;left:12px;right:12px;bottom:12px;background:var(--rust);color:#fff;text-align:center;padding:15px;border-radius:40px;font-weight:700;text-decoration:none;z-index:40}
+ body{padding-bottom:80px}
+}
+</style>
+</head>
+<body>
+<div class="demo">Probni predlog sajta koji je izradio Web Komšija. Ovo nije zvanični sajt Auto centra Vojinović.</div>
+
+<header class="hdr"><div class="wrap">
+ <a class="logo" href="#top">Auto centar <span>Vojinović</span></a>
+ <nav><a href="#put">Spremni za put?</a><a href="#usluge">Usluge</a><a href="#saveti">Saveti</a><a href="#pitanja">Pitanja</a><a href="#kontakt">Kontakt</a></nav>
+ <div class="right"><a class="tel" href="tel:+381113988889">011 398 8889</a><button class="burger" aria-label="Meni" aria-expanded="false"><i></i><i></i><i></i></button></div>
+</div></header>
+
+<section class="hero topo" id="top" style="padding:0"><div class="wrap">
+ <div>
+  <p class="kick">Milke Grgurov 9 · Gornji Voždovac</p>
+  <h1>Pre puta, <em>svratite</em> do nas.</h1>
+  <p>Auto servis na Gornjem Voždovcu, par minuta od Bulevara Peka Dapčevića. Redovan servis, popravke i provera auta pre puta, da se na more ili na slavu ide bez brige.</p>
+  <div class="acts"><a class="btn" href="tel:+381653988889">Pozovite: 065 398 8889</a><a class="btn-o" href="#put">Spremni za put?</a></div>
+ </div>
+ <div class="ph">
+  <img src="https://images.unsplash.com/photo-1615906655593-ad0386982a0f?auto=format&fit=crop&w=800&q=74" alt="Majstor radi na autu" fetchpriority="high">
+  <div class="sign">Auto centar Vojinović<small>Gornji Voždovac · Milke Grgurov 9</small></div>
+ </div>
+</div></section>
+
+<section class="plan" id="put"><div class="wrap">
+ <p class="kick">Planer pre puta</p>
+ <h2>Spremni za put?</h2>
+ <p class="lead">Izaberite kuda idete i u kom delu godine. Dobićete spisak šta da proverite. Čekirajte ono što ste već uradili.</p>
+ <div class="pgrid">
+  <div>
+   <div class="dest" id="dest">
+    <button data-d="grad">Po gradu i okolini <span>do 100 km</span></button>
+    <button data-d="srb" class="on">Kroz Srbiju <span>do 400 km</span></button>
+    <button data-d="more">Na more ili u inostranstvo <span>preko 400 km</span></button>
+   </div>
+   <div class="seas" id="seas"><button data-s="leto">Leto</button><button data-s="zima" class="on">Zima</button></div>
+  </div>
+  <div class="list">
+   <span class="gh">vaš spisak</span>
+   <h3 id="lt"></h3>
+   <ul id="ll"></ul>
+   <p class="cnt gh" id="cnt"></p>
+   <a class="btn" style="margin-top:16px" href="tel:+381113988889">Zakažite proveru pred put</a>
+  </div>
+ </div>
+</div></section>
+
+<section id="usluge"><div class="wrap">
+ <p class="kick">Usluge</p>
+ <h2>Šta radimo</h2>
+ <div class="svc">
+  <div class="s"><img src="https://images.unsplash.com/photo-1487754180451-c456f719a1fc?auto=format&fit=crop&w=600&q=70" alt="Zamena ulja" loading="lazy"><div><h3>Redovan servis</h3><p>Ulje, filteri i ono što piše u servisnoj knjižici.</p></div></div>
+  <div class="s"><img src="https://images.unsplash.com/photo-1625047509248-ec889cbff17f?auto=format&fit=crop&w=600&q=70" alt="Motor" loading="lazy"><div><h3>Popravke</h3><p>Kad se nešto čuje, upali ili ne radi kako treba.</p></div></div>
+  <div class="s"><img src="https://images.unsplash.com/photo-1613214149922-f1809c99b414?auto=format&fit=crop&w=600&q=70" alt="Točak" loading="lazy"><div><h3>Provera pred put</h3><p>Kočnice, gume, tečnosti i svetla pre dužeg puta.</p></div></div>
+ </div>
+ <p class="gh" style="margin-top:40px">tačan spisak usluga dopunjujemo zajedno sa vama</p>
+</div></section>
+
+<section id="saveti" class="topo" style="padding-top:40px"><div class="wrap">
+ <p class="kick">Saveti sa puta</p>
+ <h2>Četiri stvari koje se zaborave</h2>
+ <div class="tips">
+  <div class="tip"><svg class="sg" viewBox="0 0 52 52"><path d="M26 4 L48 44 H4 Z" fill="#fff" stroke="#c2582b" stroke-width="4" stroke-linejoin="round"/><text x="26" y="38" text-anchor="middle" font-size="20" font-weight="700" fill="#1f2620">!</text></svg><h3>Rezervni točak</h3><p>Proverite pritisak i rezervne gume, ne samo četiri na autu.</p></div>
+  <div class="tip"><svg class="sg" viewBox="0 0 52 52"><circle cx="26" cy="26" r="22" fill="#fff" stroke="#c2582b" stroke-width="4"/><path d="M16 30 h20 M20 22 h12" stroke="#1f2620" stroke-width="3"/></svg><h3>Pritisak pod teretom</h3><p>Pun auto i prtljag traže veći pritisak, piše na nalepnici u vratima.</p></div>
+  <div class="tip"><svg class="sg" viewBox="0 0 52 52"><rect x="6" y="6" width="40" height="40" rx="6" fill="#fff" stroke="#2f6b45" stroke-width="4"/><path d="M16 26 h20 M26 16 v20" stroke="#2f6b45" stroke-width="4"/></svg><h3>Prva pomoć</h3><p>Prva pomoć, trougao i prsluk moraju biti u autu.</p></div>
+  <div class="tip"><svg class="sg" viewBox="0 0 52 52"><circle cx="26" cy="26" r="22" fill="#2f6b45"/><path d="M26 14 v14 l8 6" stroke="#fff" stroke-width="4" fill="none" stroke-linecap="round"/></svg><h3>Pauze</h3><p>Pauza na svaka dva sata vožnje je dobra i za vozača i za auto.</p></div>
+ </div>
+</div></section>
+
+<section><div class="wrap">
+ <p class="kick">Dolazak</p>
+ <h2>Kako ide kod nas</h2>
+ <div class="steps">
+  <div class="st"><span class="n">1</span><h3>Pozovete</h3><p>Kažete šta vam treba i kad putujete.</p></div>
+  <div class="st"><span class="n">2</span><h3>Dovezete auto</h3><p>Milke Grgurov 9, Gornji Voždovac.</p></div>
+  <div class="st"><span class="n">3</span><h3>Pregled</h3><p>Kažemo šta treba i koliko košta.</p></div>
+  <div class="st"><span class="n">4</span><h3>Srećan put</h3><p>Preuzimate auto spremno za put.</p></div>
+ </div>
+ <p class="note">Fotografije su ilustracija. Na pravom sajtu stoje fotografije vašeg servisa.</p>
+ <div class="slot"><span class="gh">mesto za utiske mušterija</span><br>Ovde ubacujemo vaše prave recenzije sa Google-a. Ne izmišljamo ih.</div>
+</div></section>
+
+<section id="pitanja" style="padding-top:20px"><div class="wrap fg">
+ <div><p class="kick">Česta pitanja</p><h2>Pitate nas</h2><p class="lead">Za sve ostalo pozovite 011 398 8889 ili 065 398 8889.</p></div>
+ <div>
+  <details open><summary>Koliko pre puta da dođem na proveru?</summary><p>Najbolje nedelju dana ranije, da ostane vremena ako treba neki deo da se naruči.</p></details>
+  <details><summary>Šta sve proveravate pred put?</summary><p>Spisak u planeru gore je dobar okvir: kočnice, gume, tečnosti, svetla i akumulator. Tačno dogovorimo kad pozovete.</p></details>
+  <details><summary>Kako do vas prevozom?</summary><p>Najbliža stanica je Darvinova (linije 18, 25, 25P, 39), a tu je i Bulevar Peka Dapčevića (linija 39).</p></details>
+  <details><summary>Kada radite?</summary><p>Pozovite 011 398 8889 za radno vreme i termin.</p></details>
+ </div>
+</div></section>
+
+<section class="visit topo" id="kontakt"><div class="wrap">
+ <div>
+  <p class="kick">Kontakt</p>
+  <h2>Milke Grgurov 9</h2>
+  <p class="lead">Gornji Voždovac, oko 180 m od stanice Darvinova.</p>
+  <div class="hrs">
+   <div><span>Telefon</span><b><a href="tel:+381113988889">011 398 8889</a></b></div>
+   <div><span>Mobilni</span><b><a href="tel:+381653988889">065 398 8889</a></b></div>
+   <div><span>Mejl</span><b><a href="mailto:asvojinovic@gmail.com">asvojinovic@gmail.com</a></b></div>
+   <div><span>Radno vreme</span><b>pozovite za termin</b></div>
+  </div>
+ </div>
+ <div class="map"><iframe loading="lazy" title="Mapa: Milke Grgurov 9, Beograd" src="https://maps.google.com/maps?q=Milke%20Grgurov%209%2C%20Beograd&z=16&output=embed"></iframe></div>
+</div></section>
+
+<footer><div class="wrap">
+ <div class="fgrid">
+  <div><a class="logo" href="#top" style="color:#fff">Auto centar <span>Vojinović</span></a><p style="margin-top:10px;max-width:300px">Auto servis. Milke Grgurov 9, Gornji Voždovac.</p></div>
+  <div><h4>Kontakt</h4><ul><li><a href="tel:+381113988889">011 398 8889</a></li><li><a href="tel:+381653988889">065 398 8889</a></li><li><a href="mailto:asvojinovic@gmail.com">Mejl</a></li></ul></div>
+  <div><h4>Lokacija</h4><ul><li>Gornji Voždovac</li><li>stanica Darvinova</li></ul></div>
+ </div>
+ <div class="copy"><span>© 2026 Auto centar Vojinović</span><span>Probni predlog: Web Komšija</span></div>
+</div></footer>
+<a class="callbar" href="tel:+381653988889">Pozovite: 065 398 8889</a>
+
+<script>
+const hdr=document.querySelector(".hdr"),bur=document.querySelector(".burger");
+bur.onclick=()=>{const o=hdr.classList.toggle("open");bur.setAttribute("aria-expanded",o);};
+document.querySelectorAll(".hdr nav a").forEach(a=>a.onclick=()=>hdr.classList.remove("open"));
+let d="srb",s="zima";
+const base=[["Pritisak u gumama","i rezervna guma"],["Nivo ulja","proverite na šipki, motor hladan"],["Svetla i žmigavci","sva, i zadnja i stop"],["Brisači i tečnost","da čiste, a ne razmazuju"]];
+const extra={srb:[["Kočnice","pločice i diskovi"],["Rashladna tečnost","nivo u posudi"]],more:[["Kočnice","pločice, diskovi i tečnost"],["Rashladna tečnost","nivo i stanje"],["Akumulator","stari akumulator ume da izda na pola puta"],["Dokumenta i zeleni karton","za inostranstvo"],["Oprema po propisu zemlje","prva pomoć, trougao, prsluk, a negde i rezervne sijalice"]],grad:[]};
+const sez={zima:[["Zimske gume","najmanje 4 mm šare"],["Antifriz","da ne smrzne"],["Zimska tečnost za brisače","ne sme da se zaledi"]],leto:[["Klima","da hladi pre dugog puta"],["Gume na vrućini","pritisak proveriti dok su hladne"]]};
+const title={grad:"Po gradu",srb:"Put kroz Srbiju",more:"Na more ili u inostranstvo"};
+function draw(){const L=[...base,...extra[d],...sez[s]];document.getElementById("lt").textContent=title[d]+", "+(s==="zima"?"zimi":"leti");
+ document.getElementById("ll").innerHTML=L.map(([a,b])=>"<li>"+a+"<small>"+b+"</small></li>").join("");
+ document.querySelectorAll("#ll li").forEach(li=>li.onclick=()=>{li.classList.toggle("ok");cnt();});cnt();}
+function cnt(){const n=document.querySelectorAll("#ll li").length,k=document.querySelectorAll("#ll li.ok").length;document.getElementById("cnt").textContent=k===n?"sve provereno, srećan put!":k+" od "+n+" provereno";}
+document.querySelectorAll("#dest button").forEach(b=>b.onclick=()=>{document.querySelectorAll("#dest button").forEach(x=>x.classList.remove("on"));b.classList.add("on");d=b.dataset.d;draw();});
+document.querySelectorAll("#seas button").forEach(b=>b.onclick=()=>{document.querySelectorAll("#seas button").forEach(x=>x.classList.remove("on"));b.classList.add("on");s=b.dataset.s;draw();});
+draw();
+</script>
+</body>
+</html>
